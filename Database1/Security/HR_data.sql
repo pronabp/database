@@ -1,0 +1,3 @@
+﻿CREATE SCHEMA [HR_data]
+    AUTHORIZATION [dbo];
+

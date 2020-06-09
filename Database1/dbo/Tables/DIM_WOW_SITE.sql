@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[DIM_WOW_SITE] (
+    [Site]                 VARCHAR (50) NULL,
+    [Description]          VARCHAR (50) NULL,
+    [Sales District]       VARCHAR (50) NULL,
+    [Sales Organization]   VARCHAR (50) NULL,
+    [Store Opening Date]   VARCHAR (50) NULL,
+    [Cust. Number of Plnt] VARCHAR (50) NULL,
+    [Sales Area]           VARCHAR (50) NULL,
+    [Region]               VARCHAR (50) NULL,
+    [Postal Code]          VARCHAR (50) NULL,
+    [Longitude]            VARCHAR (50) NULL,
+    [Latitude]             VARCHAR (50) NULL,
+    [Local currency]       VARCHAR (50) NULL,
+    [Country]              VARCHAR (50) NULL,
+    [Store Mgr Last Name]  VARCHAR (50) NULL,
+    [Store Mgr First Name] VARCHAR (50) NULL,
+    [Regional Mgr. Email]  VARCHAR (50) NULL,
+    [Regional Manager]     VARCHAR (50) NULL,
+    [Area Manager Email]   VARCHAR (50) NULL,
+    [Area]                 VARCHAR (50) NULL,
+    [Geography]            VARCHAR (50) NULL,
+    [Sub Market]           VARCHAR (50) NULL,
+    [Store Type]           VARCHAR (50) NULL,
+    [E-Mail Address]       VARCHAR (50) NULL,
+    [Mobile Telephone No]  VARCHAR (50) NULL,
+    [BAS:First Fax Number] VARCHAR (50) NULL,
+    [BAS:FirstTelephoneNo] VARCHAR (50) NULL,
+    [Name]                 VARCHAR (50) NULL
+)
+WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = ROUND_ROBIN);
+

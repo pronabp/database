@@ -1,0 +1,7 @@
+﻿CREATE EXTERNAL FILE FORMAT [CommaDelimitedFile]
+    WITH (
+    FORMAT_TYPE = DELIMITEDTEXT,
+    FORMAT_OPTIONS (FIELD_TERMINATOR = N',', STRING_DELIMITER = N'"', DATE_FORMAT = N'dd/MM/yyyy', FIRST_ROW = 1, ENCODING = N'UTF8'),
+    DATA_COMPRESSION = N'org.apache.hadoop.io.compress.GzipCodec'
+    );
+

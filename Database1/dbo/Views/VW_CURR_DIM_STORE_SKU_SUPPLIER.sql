@@ -1,0 +1,2 @@
+﻿CREATE VIEW [dbo].[VW_CURR_DIM_STORE_SKU_SUPPLIER]
+AS select * from DIM_STORE_SKU_SUPPLIER where end_date='2999-12-31';

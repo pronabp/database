@@ -1,0 +1,25 @@
+﻿CREATE VIEW [dbo].[VW_DIM_WOW_STORE] ([STORE], [DESCRIPTION], [STORE_NAME], [SALES_DISTRICT], [SALES_ORG], [STORE_OPENING_DATE], [REGION], [POSTAL_CODE], [LONGITUDE], [LATITUDE], [STORE_MGR_LAST_NAME], [STORE_MGR_FIRST_NAME], [REGIONAL_MGR_EMAIL], [REGIONAL_MGR], [AREA_MGR_EMAIL], [GEOGRAPHY], [SUB_MARKET], [STORE_TYPE], [STORE_EMAIL], [STORE_MOBILE_NO], [STORE_FAX_NO], [STORE_PH_NO])
+AS SELECT 
+	[Site]             ,
+    [Description]      ,
+    [Name]             ,
+    [Sales District]   ,
+    [Sales Organization] ,
+    [Store Opening Date] ,
+	[REGION]           ,
+    [Postal Code]      ,
+    [Longitude]        ,
+    [Latitude]         ,
+    [Store Mgr Last Name],
+    [Store Mgr First Name],
+    [Regional Mgr. Email],
+    [Regional Manager] ,
+    [Area Manager Email] ,
+    [Geography]        ,
+    [Sub Market]       ,
+    [Store Type]       ,
+    [E-Mail Address]   ,
+    [Mobile Telephone No],
+    [BAS:First Fax Number],
+    [BAS:FirstTelephoneNo]
+FROM [dbo].[DIM_WOW_SITE];

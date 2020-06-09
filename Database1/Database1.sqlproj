@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>Database1</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{f7f5088f-a49e-4ddc-8b0c-92bd6594c7b8}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlDwDatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>Database1</RootNamespace>
+    <AssemblyName>Database1</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <QueryStoreCaptureMode>None</QueryStoreCaptureMode>
+    <QueryStoreDesiredState>Off</QueryStoreDesiredState>
+    <QueryStoreFlushInterval>0</QueryStoreFlushInterval>
+    <QueryStoreStatsInterval>0</QueryStoreStatsInterval>
+    <QueryStoreMaxPlansPerQuery>0</QueryStoreMaxPlansPerQuery>
+    <QueryStoreStaleQueryThreshold>0</QueryStoreStaleQueryThreshold>
+    <QueryStoreMaxStorageSize>0</QueryStoreMaxStorageSize>
+    <DbScopedConfigLegacyCardinalityEstimation>Off</DbScopedConfigLegacyCardinalityEstimation>
+    <DbScopedConfigLegacyCardinalityEstimationSecondary>Off</DbScopedConfigLegacyCardinalityEstimationSecondary>
+    <DbScopedConfigMaxDOP>0</DbScopedConfigMaxDOP>
+    <DbScopedConfigMaxDOPSecondary>0</DbScopedConfigMaxDOPSecondary>
+    <DbScopedConfigParameterSniffing>Off</DbScopedConfigParameterSniffing>
+    <DbScopedConfigParameterSniffingSecondary>Off</DbScopedConfigParameterSniffingSecondary>
+    <DbScopedConfigOptimizerHotfixes>Off</DbScopedConfigOptimizerHotfixes>
+    <DbScopedConfigOptimizerHotfixesSecondary>Off</DbScopedConfigOptimizerHotfixesSecondary>
+    <DelayedDurability>DISABLED</DelayedDurability>
+    <AutoCreateStatisticsIncremental>False</AutoCreateStatisticsIncremental>
+    <MemoryOptimizedElevateToSnapshot>False</MemoryOptimizedElevateToSnapshot>
+    <Containment>None</Containment>
+    <IsNestedTriggersOn>True</IsNestedTriggersOn>
+    <IsTransformNoiseWordsOn>False</IsTransformNoiseWordsOn>
+    <TwoDigitYearCutoff>2049</TwoDigitYearCutoff>
+    <NonTransactedFileStreamAccess>OFF</NonTransactedFileStreamAccess>
+    <TargetRecoveryTimePeriod>60</TargetRecoveryTimePeriod>
+    <TargetRecoveryTimeUnit>SECONDS</TargetRecoveryTimeUnit>
+    <IsChangeTrackingOn>False</IsChangeTrackingOn>
+    <IsChangeTrackingAutoCleanupOn>False</IsChangeTrackingAutoCleanupOn>
+    <ChangeTrackingRetentionPeriod>0</ChangeTrackingRetentionPeriod>
+    <IsEncryptionOn>False</IsEncryptionOn>
+    <IsBrokerPriorityHonored>False</IsBrokerPriorityHonored>
+    <Trustworthy>False</Trustworthy>
+    <AutoUpdateStatisticsAsynchronously>False</AutoUpdateStatisticsAsynchronously>
+    <PageVerify>NONE</PageVerify>
+    <ServiceBrokerOption>DisableBroker</ServiceBrokerOption>
+    <DateCorrelationOptimizationOn>False</DateCorrelationOptimizationOn>
+    <Parameterization>SIMPLE</Parameterization>
+    <AllowSnapshotIsolation>False</AllowSnapshotIsolation>
+    <ReadCommittedSnapshot>False</ReadCommittedSnapshot>
+    <VardecimalStorageFormatOn>False</VardecimalStorageFormatOn>
+    <SupplementalLoggingOn>False</SupplementalLoggingOn>
+    <CompatibilityMode>130</CompatibilityMode>
+    <AnsiNullDefault>True</AnsiNullDefault>
+    <AnsiNulls>True</AnsiNulls>
+    <AnsiPadding>True</AnsiPadding>
+    <AnsiWarnings>True</AnsiWarnings>
+    <ArithAbort>True</ArithAbort>
+    <ConcatNullYieldsNull>True</ConcatNullYieldsNull>
+    <QuotedIdentifier>True</QuotedIdentifier>
+    <NumericRoundAbort>True</NumericRoundAbort>
+    <RecursiveTriggersEnabled>False</RecursiveTriggersEnabled>
+    <DatabaseChaining>False</DatabaseChaining>
+    <DatabaseState>ONLINE</DatabaseState>
+    <CloseCursorOnCommitEnabled>False</CloseCursorOnCommitEnabled>
+    <DefaultCursor>GLOBAL</DefaultCursor>
+    <AutoClose>False</AutoClose>
+    <AutoCreateStatistics>True</AutoCreateStatistics>
+    <AutoShrink>False</AutoShrink>
+    <AutoUpdateStatistics>False</AutoUpdateStatistics>
+    <TornPageDetection>False</TornPageDetection>
+    <DatabaseAccess>MULTI_USER</DatabaseAccess>
+    <Recovery>SIMPLE</Recovery>
+    <EnableFullTextSearch>False</EnableFullTextSearch>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="HR_data\" />
+    <Folder Include="HR_data\Tables\" />
+    <Folder Include="meta\" />
+    <Folder Include="meta\Tables\" />
+    <Folder Include="ctrl\" />
+    <Folder Include="ctrl\Tables\" />
+    <Folder Include="enable\" />
+    <Folder Include="enable\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="loyalty\" />
+    <Folder Include="loyalty\Views\" />
+    <Folder Include="Security\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="External Resources\" />
+    <Folder Include="enable\External Tables\" />
+    <Folder Include="dbo\External Tables\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\im_watermarktable.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_LINEITEM_TLOG.sql" />
+    <Build Include="HR_data\Tables\Basic_User.sql" />
+    <Build Include="HR_data\Tables\Job_info.sql" />
+    <Build Include="dbo\Tables\EG_POS_LOYALTY_SUMMARY.sql" />
+    <Build Include="HR_data\Tables\Address_Type.sql" />
+    <Build Include="dbo\Tables\TestRound.sql" />
+    <Build Include="HR_data\Tables\Email_Import.sql" />
+    <Build Include="dbo\Tables\TestHash.sql" />
+    <Build Include="HR_data\Tables\Phone_Import.sql" />
+    <Build Include="dbo\Tables\TestHash1.sql" />
+    <Build Include="HR_data\Tables\Emergency_Contact.sql" />
+    <Build Include="HR_data\Tables\NationalID_Import.sql" />
+    <Build Include="dbo\Tables\TestHashleft.sql" />
+    <Build Include="HR_data\Tables\EmployementInfo_Import.sql" />
+    <Build Include="dbo\Tables\TestHashright.sql" />
+    <Build Include="dbo\Tables\EG_WOW_SITE_SOH.sql" />
+    <Build Include="HR_data\Tables\CompInfo_Import.sql" />
+    <Build Include="dbo\Tables\STG_TAX_RATE.sql" />
+    <Build Include="dbo\Tables\STG_PC_INV_ADJ_TYPES.sql" />
+    <Build Include="dbo\Tables\STG_PROMOTION_STORE.sql" />
+    <Build Include="dbo\Tables\EG_POS_ITEMLINE_APPROVAL.sql" />
+    <Build Include="dbo\Tables\PURCHASE_ORDER.sql" />
+    <Build Include="dbo\Tables\WOW_POSDTA_TENDER_TLOG.sql" />
+    <Build Include="dbo\Tables\GL_ACCOUNTING.sql" />
+    <Build Include="dbo\Tables\ACCOUNTING_INVOICE.sql" />
+    <Build Include="dbo\Tables\TESTJOSN.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_LINEITEM_TLOG_OLD.sql" />
+    <Build Include="dbo\Tables\EG_POS_ITEMLINE_DEFERRED_REWARDS.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_REWARDS_TLOG.sql" />
+    <Build Include="dbo\Tables\DIM_PRODUCTS_TEST.sql" />
+    <Build Include="dbo\Tables\WOW_SITE_SOH_NEW.sql" />
+    <Build Include="meta\Tables\Cutoff_Store.sql" />
+    <Build Include="ctrl\Tables\ingestion_metadata.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_ARTICLE.sql" />
+    <Build Include="dbo\Tables\OUT_ENABLE_TURNOVER.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_ARTICLE_HIERARCHY.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_SITE.sql" />
+    <Build Include="enable\Tables\OUT_ENABLE_PRODUCT.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_VENDOR.sql" />
+    <Build Include="ctrl\Tables\tbl_master.sql" />
+    <Build Include="enable\Tables\OUT_ENABLE_STORE.sql" />
+    <Build Include="dbo\Tables\EG_POS_EOD.sql" />
+    <Build Include="dbo\Tables\EG_WOW_ARTICLE_EAN.sql" />
+    <Build Include="dbo\Tables\EG_STORE_EOD.sql" />
+    <Build Include="enable\Tables\FACT_TURNOVER.sql" />
+    <Build Include="dbo\Tables\EG_POS_PAID_IN_OUT.sql" />
+    <Build Include="ctrl\Tables\tbl_transaction.sql" />
+    <Build Include="dbo\Tables\EG_VENDOR_ARTICLE_EAN.sql" />
+    <Build Include="dbo\Tables\EG_POS_ITEMLINE_PRICE_MODIFIER.sql" />
+    <Build Include="enable\Tables\OUT_ENABLE_VENDOR.sql" />
+    <Build Include="dbo\Tables\EG_POS_ITEMLINE_TENDER_REWARDS.sql" />
+    <Build Include="ctrl\Tables\azure_storage.sql" />
+    <Build Include="enable\Tables\DIM_PRODUCT.sql" />
+    <Build Include="dbo\Tables\WOW_POSDTA_HEADERS_TLOG.sql" />
+    <Build Include="dbo\Tables\SKU_SUPPLIER.sql" />
+    <Build Include="dbo\Tables\STORE_PROMOTIONS.sql" />
+    <Build Include="dbo\Tables\STORE_SKU_SOH_BY_DATE.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_REWARDS_TLOG_OLD.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_TENDER_TLOG.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_TENDER_TLOG_OLD.sql" />
+    <Build Include="dbo\Tables\EG_LMS_Offer_ID.sql" />
+    <Build Include="enable\Tables\DIM_PROMOTION.sql" />
+    <Build Include="dbo\Tables\EG_POS_HEADER_APPROVAL.sql" />
+    <Build Include="dbo\Tables\STG_PRODUCTS.sql" />
+    <Build Include="dbo\Tables\DIM_TAX_AND_CHARGES.sql" />
+    <Build Include="dbo\Tables\STG_TAX_AND_CHARGES.sql" />
+    <Build Include="dbo\Tables\DIM_STORE_SKU_SUPPLIER.sql" />
+    <Build Include="dbo\Tables\TAX_AND_CHARGES.sql" />
+    <Build Include="dbo\Tables\STG_STORE_SKU_SUPPLIER.sql" />
+    <Build Include="dbo\Tables\DIM_PC_INV_ADJ_TYPES.sql" />
+    <Build Include="dbo\Tables\DSD_DETAIL.sql" />
+    <Build Include="dbo\Tables\DIM_PRODUCTS.sql" />
+    <Build Include="dbo\Tables\DIM_CALENDAR.sql" />
+    <Build Include="dbo\Tables\WOW_POSDTA_LINEITEM_TLOG.sql" />
+    <Build Include="dbo\Tables\DSD_HEADER.sql" />
+    <Build Include="dbo\Tables\WOW_POSDTA_REWARDS_TLOG.sql" />
+    <Build Include="dbo\Tables\TAX_RATE.sql" />
+    <Build Include="dbo\Tables\PO_COST_BY_DATE.sql" />
+    <Build Include="dbo\Tables\FUEL_DELIVERY_SUB_DETAIL.sql" />
+    <Build Include="dbo\Tables\WOW_STKLOSS_DAILY.sql" />
+    <Build Include="dbo\Tables\ON_HAND_BY_DATE.sql" />
+    <Build Include="dbo\Tables\PROMOTION_MASTER.sql" />
+    <Build Include="dbo\Tables\PRICES_BY_DATE.sql" />
+    <Build Include="dbo\Tables\Test.sql" />
+    <Build Include="dbo\Tables\V_ADJUST_AND_PC.sql" />
+    <Build Include="dbo\Tables\DIM_TAX_RATE.sql" />
+    <Build Include="dbo\Tables\EG_POS_DECLARATION_BKP.sql" />
+    <Build Include="dbo\Tables\STG_STORES.sql" />
+    <Build Include="dbo\Tables\EG_POS_PROMO_SUMMARY.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_FISCAL_CALENDAR.sql" />
+    <Build Include="dbo\Tables\EG_POS_TENDERLINE.sql" />
+    <Build Include="enable\Tables\Promotion_Stores.sql" />
+    <Build Include="dbo\Tables\EG_POS_ITEMLINE.sql" />
+    <Build Include="enable\Tables\Promotion_Master.sql" />
+    <Build Include="dbo\Tables\EG_POS_ITEMLINE_TAX.sql" />
+    <Build Include="dbo\Tables\Test_poc.sql" />
+    <Build Include="dbo\Tables\EG_POS_HEADER.sql" />
+    <Build Include="enable\Tables\T_2c8b9888b5e24c898acd57b2262c851b.sql" />
+    <Build Include="ctrl\Tables\CNTRL_ERROR_LOGS.sql" />
+    <Build Include="dbo\Tables\WOW_INTERIMGP_ADJ.sql" />
+    <Build Include="meta\Tables\Card_Group.sql" />
+    <Build Include="dbo\Tables\WOW_INTERIMGP_COGS.sql" />
+    <Build Include="dbo\Tables\DIM_MANUFACTURER.sql" />
+    <Build Include="dbo\Tables\PC_ENTRIES.sql" />
+    <Build Include="dbo\Tables\WOW_GRIR.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_ARTICLE_EAN.sql" />
+    <Build Include="dbo\Tables\WOW_MNL_JRNLS.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_ARTICLE_EAN_OLD_18Mar2020.sql" />
+    <Build Include="dbo\Tables\WOW_SOH_COGS.sql" />
+    <Build Include="dbo\Tables\CTRL_DELTA_LOAD.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_ARTICLE_HIERARCHY_OLD_Mar182020.sql" />
+    <Build Include="dbo\Tables\Jda_Product.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_ARTICLE_OLD_12April2020.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_ARTICLE_OLD_18Mar2020.sql" />
+    <Build Include="dbo\Tables\DIM_WOW_SITE_OLD.sql" />
+    <Build Include="dbo\Tables\EG_POS_CUSTOMER.sql" />
+    <Build Include="dbo\Tables\EG_ENVOY_PITRJOURNAL_HDR.sql" />
+    <Build Include="dbo\Tables\EG_WOW_ARTICLE_EAN_OLD.sql" />
+    <Build Include="dbo\Tables\EG_WOW_SWITCH_TRANS.sql" />
+    <Build Include="dbo\Tables\EG_POS_DECLARATION.sql" />
+    <Build Include="dbo\Tables\Recons_Sales_Details.sql" />
+    <Build Include="dbo\Tables\WOW_SOH_DAILY.sql" />
+    <Build Include="dbo\Tables\DIM_STORES.sql" />
+    <Build Include="dbo\Tables\Table_Row_Count.sql" />
+    <Build Include="dbo\Tables\v_Item_Price.sql" />
+    <Build Include="dbo\Tables\WOW_ARTICLEBARCODE_FROM_POS.sql" />
+    <Build Include="dbo\Tables\DIM_PROMOTION_STORE.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_HEADERS_TLOG.sql" />
+    <Build Include="HR_data\Tables\Person_Biographical_Info.sql" />
+    <Build Include="HR_data\Tables\Person_Info.sql" />
+    <Build Include="HR_data\Tables\Position_Import.sql" />
+    <Build Include="dbo\Tables\WOW_POSDM_HEADERS_TLOG_OLD.sql" />
+    <Build Include="dbo\Views\VW_SELL_PRICE.sql" />
+    <Build Include="dbo\Views\VW_WOW_ARTICLE_EAN_SITE_VENDOR.sql" />
+    <Build Include="dbo\Views\VW_CURR_DIM_TAX_AND_CHARGES.sql" />
+    <Build Include="dbo\Views\VW_PRICE_SALE_TAX_REDEMPTION.sql" />
+    <Build Include="dbo\Views\VW_EG_SWT_MSTR_SWITCH_RECON_19_04_2020.sql" />
+    <Build Include="dbo\Views\VW_DIM_WOW_STORE.sql" />
+    <Build Include="dbo\Views\VW_OUT_ENABLE_PRODUCT.sql" />
+    <Build Include="loyalty\Views\VW_LYLTY_NON_MBR_TNXS.sql" />
+    <Build Include="dbo\Views\VW_EG_POS_Mstr_Switch_Recon_V2.sql" />
+    <Build Include="dbo\Views\VW_GST_Tax_Report_28_03_20.sql" />
+    <Build Include="dbo\Views\VW_PARTITION_SIZING.sql" />
+    <Build Include="dbo\Views\VW_EG_POS_MSTR_SWITCH_RECON_19_04_2020.sql" />
+    <Build Include="dbo\Views\VW_COST_SELL_PRICE.sql" />
+    <Build Include="dbo\Views\VW_GST_Tax_Report.sql" />
+    <Build Include="dbo\Views\VW_PRICE_SALE_PROMO_TAX_TENDER_31032020.sql" />
+    <Build Include="dbo\Views\EG_POS_ENVY_SKU_SALES_RECON.sql" />
+    <Build Include="dbo\Views\VW_PROMO_REDEMPTION_30032020.sql" />
+    <Build Include="dbo\Views\VW_CURR_DIM_STORES.sql" />
+    <Build Include="dbo\Views\VW_OUT_ENABLE_VENDOR.sql" />
+    <Build Include="dbo\Views\VW_DIM_WOW_ARTICLE_HIERARCHY.sql" />
+    <Build Include="dbo\Views\VW_EG_QUALIFYING_SPENT.sql" />
+    <Build Include="dbo\Views\VW_CURR_DIM_STORE_SKU_SUPPLIER.sql" />
+    <Build Include="dbo\Views\VW_WK_QTY_SALE.sql" />
+    <Build Include="dbo\Views\VW_SOH_REPORT.sql" />
+    <Build Include="dbo\Views\VW_OUT_ENABLE_TURNOVER.sql" />
+    <Build Include="dbo\Views\VW_EG_POS_MSTR_SWITCH_RECON_06052020.sql" />
+    <Build Include="dbo\Views\VW_EG_POS_MSTR_SWITCH_RECON.sql" />
+    <Build Include="dbo\Views\VW_COST_PRICE.sql" />
+    <Build Include="dbo\Views\VW_PRICE_SALE_TAX_REDUMPTION.sql" />
+    <Build Include="dbo\Views\VW_EG_WOW_ARTICLE_TUN_SITE_VENDOR.sql" />
+    <Build Include="dbo\Views\VW_EG_POS_NON_LYLTY_TXNS.sql" />
+    <Build Include="dbo\Views\VW_EG_POS_MSTR_SWITCH_RECON_BKP.sql" />
+    <Build Include="dbo\Views\VW_PROMO_REDEMPTION.sql" />
+    <Build Include="dbo\Views\VW_EG_SWT_Mstr_Switch_Recon_V2.sql" />
+    <Build Include="dbo\Views\VW_OUT_ENABLE_STORE.sql" />
+    <Build Include="dbo\Views\VW_EG_SWT_MSTR_SWITCH_RECON_06052020.sql" />
+    <Build Include="dbo\Views\VW_OUT_ENABLE_PROMOTION.sql" />
+    <Build Include="dbo\Views\VW_POS_Declaration.sql" />
+    <Build Include="dbo\Views\VW_WOW_ARTICLE_TUN_SITE_VENDOR.sql" />
+    <Build Include="dbo\Views\VW_DIM_WOW_ARTICLE.sql" />
+    <Build Include="dbo\Views\VW_PRICE_SALE_PROMO_TAX_TENDER.sql" />
+    <Build Include="dbo\Views\VW_EG_SWT_MSTR_SWITCH_RECON_BKP.sql" />
+    <Build Include="dbo\Views\VW_EG_SWT_MSTR_SWITCH_RECON.sql" />
+    <Build Include="dbo\Views\VW_EG_POS_RECON.sql" />
+    <Build Include="dbo\Views\VW_CURR_DIM_PRODUCTS.sql" />
+    <Build Include="dbo\Views\VW_DIM_WOW_VENDOR.sql" />
+    <Build Include="Security\LoadUser.sql" />
+    <Build Include="Security\TestUser.sql" />
+    <Build Include="Security\DevUser.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_DIM_TAX_AND_CHARGES.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_DIM_STORES.sql" />
+    <Build Include="dbo\Stored Procedures\SP_VW_ITEMLINE_SALES_GST.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_DIM_PRODUCTS.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_DIM_PC_INV_ADJ_TYPES.sql" />
+    <Build Include="dbo\Stored Procedures\im_write_watermark.sql" />
+    <Build Include="dbo\Stored Procedures\SP_UPDATE_STORAGE_FILENAME.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_DIM_STORE_SKU_SUPPLIER.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_STG_PRODUCTS.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_DIM_PROMOTION_STORE.sql" />
+    <Build Include="dbo\Stored Procedures\usp_write_watermark.sql" />
+    <Build Include="dbo\Stored Procedures\SP_LOAD_DIM_TAX_RATE.sql" />
+    <Build Include="Security\egausimdevadlsg2.sql" />
+    <Build Include="Security\DATALAKESTORAGE.sql" />
+    <Build Include="Security\cred_7e6f1580aeb0418fb6db583cd2b97a84.sql" />
+    <Build Include="Security\https___sqlvaxxbi4f7hkw4zg.blob.core.windows.net_sqldbauditlogs.sql" />
+    <Build Include="Security\egdev.sql" />
+    <Build Include="Security\ctrl.sql" />
+    <Build Include="Security\inbound.sql" />
+    <Build Include="Security\outbound.sql" />
+    <Build Include="Security\adhoc.sql" />
+    <Build Include="Security\rpt.sql" />
+    <Build Include="Security\HR_data.sql" />
+    <Build Include="Security\meta.sql" />
+    <Build Include="Security\enable.sql" />
+    <Build Include="Security\loyalty.sql" />
+    <Build Include="External Resources\DevDataLakeStorage.sql" />
+    <Build Include="External Resources\DLStorage.sql" />
+    <Build Include="External Resources\wow-data%40egausimdevadlsg2.sql" />
+    <Build Include="External Resources\src_7e6f1580aeb0418fb6db583cd2b97a84.sql" />
+    <Build Include="External Resources\DataLakeStorage.sql" />
+    <Build Include="External Resources\CsvFormatWithHeader.sql" />
+    <Build Include="External Resources\CommaDelimitedFile.sql" />
+    <Build Include="External Resources\CSVFileFormat.sql" />
+    <Build Include="External Resources\GzipCSVFileFormat.sql" />
+    <Build Include="External Resources\TextFile.sql" />
+    <Build Include="External Resources\fmt_7e6f1580aeb0418fb6db583cd2b97a84.sql" />
+    <Build Include="External Resources\CsvFormatWithHeaderComma.sql" />
+    <Build Include="enable\External Tables\EXT_TEST1.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Inv_Level_1.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Inv_Level_2.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Inv_Level_3.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Inv_Level_4.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_PRODUCTS.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Corp_Level_1.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Corp_Level_2.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Corp_Level_3.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_Corp_Level_4.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_CALENDAR.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_VENDOR_ARTICLE_EAN.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_SITE_SOH.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_WOW_ARTICLE_EAN.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_STORES.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_AuthorisationMethod.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_DiscountType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_EntryMethod.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_ItemReasonCode.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_ItemTXNType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_LayByStatus.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_POSRegisterType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_PosTXNType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_RegisterUsageType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_ReturnReason.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_RewardTXNType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_SaleType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_TaxType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_TenderType.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_LKP_POSDTA_TransactionReason.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="enable\External Tables\STG_DIM_PRODUCTS.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="enable\External Tables\STG_DIM_PRODUCT.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+    <Build Include="dbo\External Tables\EXT_TEST.sql">
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
+  </ItemGroup>
+</Project>

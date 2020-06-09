@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[PO_COST_BY_DATE] (
+    [rowid]            VARCHAR (60)    NULL,
+    [PO_Item]          VARCHAR (40)    NULL,
+    [Supplier]         VARCHAR (40)    NULL,
+    [From_date]        DATETIME        NULL,
+    [Regular_Cost]     DECIMAL (30, 4) NULL,
+    [Qty_2]            DECIMAL (30, 4) NULL,
+    [Prc_2]            VARCHAR (30)    NULL,
+    [Qty_3]            DECIMAL (30, 4) NULL,
+    [Prc_3]            VARCHAR (30)    NULL,
+    [Qty_4]            DECIMAL (30, 4) NULL,
+    [Prc_4]            VARCHAR (30)    NULL,
+    [Qty_5]            DECIMAL (30, 4) NULL,
+    [Prc_5]            VARCHAR (30)    NULL,
+    [Qty_6]            DECIMAL (30, 4) NULL,
+    [Prc_6]            VARCHAR (30)    NULL,
+    [Qty_7]            DECIMAL (30, 4) NULL,
+    [Prc_7]            VARCHAR (30)    NULL,
+    [Qty_8]            DECIMAL (30, 4) NULL,
+    [Prc_8]            VARCHAR (30)    NULL,
+    [UOM]              VARCHAR (20)    NULL,
+    [Store]            VARCHAR (30)    NULL,
+    [Exported]         VARCHAR (30)    NULL,
+    [Purge]            VARCHAR (30)    NULL,
+    [EXPORTED_TO_HO]   VARCHAR (30)    NULL,
+    [TIMESTAMP]        DATETIME        NULL,
+    [source_file_name] VARCHAR (200)   NULL,
+    [load_date]        DATETIME        NULL
+)
+WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([PO_Item]), PARTITION([From_date] RANGE FOR VALUES ('12/01/2019 00:00:00', '01/01/2020 00:00:00', '02/01/2020 00:00:00', '03/01/2020 00:00:00', '04/01/2020 00:00:00', '05/01/2020 00:00:00', '06/01/2020 00:00:00', '07/01/2020 00:00:00', '08/01/2020 00:00:00', '09/01/2020 00:00:00', '10/01/2020 00:00:00', '11/01/2020 00:00:00', '12/01/2020 00:00:00', '01/01/2021 00:00:00', '02/01/2021 00:00:00', '03/01/2021 00:00:00', '04/01/2021 00:00:00', '05/01/2021 00:00:00', '06/01/2021 00:00:00', '07/01/2021 00:00:00', '08/01/2021 00:00:00', '09/01/2021 00:00:00', '10/01/2021 00:00:00', '11/01/2021 00:00:00', '12/01/2021 00:00:00')));
+

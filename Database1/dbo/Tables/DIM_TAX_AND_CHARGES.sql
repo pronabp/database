@@ -1,0 +1,31 @@
+﻿CREATE TABLE [dbo].[DIM_TAX_AND_CHARGES] (
+    [TaxCharge_Code]        VARCHAR (20)  NOT NULL,
+    [Type]                  VARCHAR (20)  NULL,
+    [Sub_Type]              VARCHAR (20)  NULL,
+    [Name]                  VARCHAR (50)  NULL,
+    [Applies_On]            VARCHAR (20)  NULL,
+    [GL]                    VARCHAR (20)  NULL,
+    [Value]                 VARCHAR (20)  NULL,
+    [Tax_Type]              VARCHAR (20)  NULL,
+    [From_Date]             VARCHAR (20)  NULL,
+    [To_Date]               VARCHAR (20)  NULL,
+    [Consumption_Tax]       VARCHAR (20)  NULL,
+    [Tax_Value_for_Purch]   VARCHAR (20)  NULL,
+    [Calculation_Precision] VARCHAR (20)  NULL,
+    [Withhold_Liability_GL] VARCHAR (20)  NULL,
+    [Exported]              VARCHAR (20)  NULL,
+    [Especifico_Tax]        VARCHAR (20)  NULL,
+    [Used_Internally]       VARCHAR (20)  NULL,
+    [ALLOW_LOW_MODIFY]      VARCHAR (20)  NULL,
+    [ENFORCE_FOR_OS]        VARCHAR (20)  NULL,
+    [Inventory_Payout]      VARCHAR (20)  NULL,
+    [Purge]                 VARCHAR (20)  NULL,
+    [Def_Number_Of_Days]    VARCHAR (20)  NULL,
+    [TIMESTAMP]             DATETIME      NULL,
+    [start_date]            DATE          NULL,
+    [end_date]              DATE          NULL,
+    [load_date]             DATETIME      NULL,
+    [source_file_name]      VARCHAR (200) NULL
+)
+WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([TaxCharge_Code]));
+

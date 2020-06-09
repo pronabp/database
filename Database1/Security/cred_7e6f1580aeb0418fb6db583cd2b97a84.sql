@@ -1,0 +1,3 @@
+﻿CREATE DATABASE SCOPED CREDENTIAL [cred_7e6f1580aeb0418fb6db583cd2b97a84]
+    WITH IDENTITY = N'adf_identity';
+

@@ -1,0 +1,25 @@
+﻿CREATE VIEW [dbo].[VW_DIM_WOW_ARTICLE] ([ARTICLE], [DESCRIPTION], [PACK_SIZE], [LENGTH], [WIDTH], [HEIGHT], [UOM], [ORDER_MULTIPLE], [SCAN_DESCRIPTION], [CATEGORY], [ORDER_UNIT], [ARTICLE_TYPE], [BASE_UNIT], [EAN_TYPE], [MCH_L4], [MCH_L3], [MCH_L2], [MCH_L1], [SUBSECTION], [WAREHOUSE_DESCRIPTION], [FINE_DEPARTMENT], [COARSE_DEPARTMENT])
+AS SELECT 
+    [Article]          ,
+    [Description]          ,
+    [Vendor Pack Size]     ,
+	[Length]               ,
+    [Width]                ,
+    [Height]               ,
+    [Unit]                 ,
+    [Order Multiple]       ,
+    [SCAN Description]     ,
+	[General item categor] ,
+    [Order unit]           ,
+    [Article Type]         ,
+    [Base Unit]            ,
+    [EAN Number Type]      ,
+    [MCH Level 4]         ,
+    [MCH Level 3]          ,
+    [MCH Level 2]          ,
+    [MCH Level 1]          ,
+    [Subsection Number]    ,
+	[Warehouse Descriptio] ,
+    [Fine Department Numb] ,
+    [Coarse Departmnt No] 
+FROM [dbo].[DIM_WOW_ARTICLE];

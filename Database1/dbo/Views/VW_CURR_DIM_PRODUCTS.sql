@@ -1,0 +1,2 @@
+﻿CREATE VIEW [VW_CURR_DIM_PRODUCTS]
+AS select * from DIM_PRODUCTS where end_date='2999-12-31';
