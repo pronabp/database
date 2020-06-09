@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [dbo].[Test_poc] (
-    [ID] INT NOT NULL
+    [ID] INT NOT NULL-- id column
 )
 WITH (CLUSTERED COLUMNSTORE INDEX, DISTRIBUTION = HASH([ID]));
 
