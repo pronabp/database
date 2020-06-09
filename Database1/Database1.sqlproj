@@ -137,6 +137,7 @@
     <Folder Include="External Resources\" />
     <Folder Include="enable\External Tables\" />
     <Folder Include="dbo\External Tables\" />
+    <Folder Include="Scripts\" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\im_watermarktable.sql" />
@@ -223,7 +224,6 @@
     <Build Include="dbo\Tables\ON_HAND_BY_DATE.sql" />
     <Build Include="dbo\Tables\PROMOTION_MASTER.sql" />
     <Build Include="dbo\Tables\PRICES_BY_DATE.sql" />
-    <Build Include="dbo\Tables\Test.sql" />
     <Build Include="dbo\Tables\V_ADJUST_AND_PC.sql" />
     <Build Include="dbo\Tables\DIM_TAX_RATE.sql" />
     <Build Include="dbo\Tables\EG_POS_DECLARATION_BKP.sql" />
@@ -459,5 +459,6 @@
     <Build Include="dbo\External Tables\EXT_TEST.sql">
       <QuotedIdentifier>Off</QuotedIdentifier>
     </Build>
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
   </ItemGroup>
 </Project>
