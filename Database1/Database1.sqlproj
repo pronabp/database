@@ -282,7 +282,6 @@
     <Build Include="loyalty\Views\VW_LYLTY_NON_MBR_TNXS.sql" />
     <Build Include="dbo\Views\VW_EG_POS_Mstr_Switch_Recon_V2.sql" />
     <Build Include="dbo\Views\VW_GST_Tax_Report_28_03_20.sql" />
-    <Build Include="dbo\Views\VW_PARTITION_SIZING.sql" />
     <Build Include="dbo\Views\VW_EG_POS_MSTR_SWITCH_RECON_19_04_2020.sql" />
     <Build Include="dbo\Views\VW_COST_SELL_PRICE.sql" />
     <Build Include="dbo\Views\VW_GST_Tax_Report.sql" />
