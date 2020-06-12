@@ -1,3 +1,4 @@
-﻿CREATE DATABASE SCOPED CREDENTIAL [egausimdevadlsg2]
+﻿
+CREATE DATABASE SCOPED CREDENTIAL [egausimdevadlsg2]
     WITH IDENTITY = N'imadmin';
 
